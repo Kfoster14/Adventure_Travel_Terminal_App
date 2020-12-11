@@ -9,14 +9,12 @@
 
 A5. 
 - Statement of purpose: The purpose of this application is to provide people interested in adventure travel within Australia the chance to book adventure activities in the city of their choice using a simple, user-friendly app. 
-- The problem to be solved in this application is providing a simple travel app for adventure enthusiasts to book their travel. I am developing the app to cater for a niche section of the travel market.
-- The target audience is those people who are booking travel specifically to take part in select adventure activities located in the capital cities throughout Australia.
+- The problem to be solved in this application is to provide a simple travel app for adventure enthusiasts to book their travel. I am developing the app to cater for a niche section of the travel market.
+- The target audience is people who are booking travel specifically to take part in select adventure activities located in the Brisbane and Sydney.
+
 - The target audience will use the application by:
-    1. Clicking on the app, which will produce a welcome message and a prompt to start using the app.
-    2. Registering with the adventure travel company by entering their contact details: first name, last name, home address and email address (input).
-        - The app will check that all user details have been entered.
-        - If any of the fields are missing, the user is prompted to "try again".
-        - The successful entry of a user's details will prompt the message "Welcome to Adventure Travel!" with the following main menu options to choose from:
+    1. Clicking on the app, which will produce a welcome message "Welcome to Adventure Travel!" and a prompt for the user to start using the app.
+    2. Selecting from one of the following main menu options to choose from:
             - View list of adventure activities (Brisbane and Sydney)
             - Book your adventure
             - Cancel your booking
@@ -24,7 +22,11 @@ A5.
     3. Viewing a list of activities available in the cities Brisbane and Sydney.
     4. Selecting a city and an adventure activity followed by the message prompt "Do you want to book this adventure?"
     5. Selecting from the options "Yes, I want to book this adventure" or "No, take me back to the list of activities".
-        - If the selected option is "Yes", they will be prompted by the message "When do you want to travel?"
+        - If the selected option is "Yes", they will be prompted by the message 
+        Registering with the adventure travel company by entering their contact details: first name, last name, home address and email address (input).
+        - The app will check that all user details have been entered.
+        - If any of the fields are missing, the user is prompted to "try again".
+        "When do you want to travel?"The successful entry of a user's details will prompt the message 
         - If the selected option is "No", they will be taken back to step 4 (Selecting a city and an adventure activity).
     6. Selecting from a list of available dates for the activity and city followed by the message "You are booked for x activity in x city on the x date. Your booking ID is x".
     7. Selecting the option "cancel your booking" prompts the message "Are you sure that you want to cancel this activity?"
