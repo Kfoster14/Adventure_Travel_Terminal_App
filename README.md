@@ -1,5 +1,9 @@
 # <font color="magenta">T1A3 - Terminal Application</font>
 
+## <font color="blue">R4. Provide a link to your source control repository</font>
+A4. The link to my repository is:
+https://github.com/Kfoster14/KelleyFoster_T1A3
+
 ## <font color="blue">R5. Design a Software Development Plan for a terminal application. The following requirements provide details of what needs to be included in this plan,
 - Develop a statement of purpose and scope for your application. It must include:
     - describe at a high level what the application will do
@@ -8,27 +12,27 @@
     - explain how a member of the target audience will use it</font>
 
 A5. 
-- Statement of purpose: The purpose of this application is to provide people interested in adventure travel within Australia the chance to book adventure activities in the city of their choice using a simple, user-friendly app. 
+- Statement of purpose: The purpose of this application is to provide people interested in adventure travel within Australia the chance to book adventure activities in either Sydney or Brisbane using a simple, user-friendly app. 
 - The problem to be solved in this application is to provide a simple travel app for adventure enthusiasts to book their travel. I am developing the app to cater for a niche section of the travel market.
-- The target audience is people who are booking travel specifically to take part in select adventure activities located in the Brisbane and Sydney.
+- The target audience is people who are booking travel specifically to take part in select adventure activities located in the cities Brisbane and Sydney.
 
 - The target audience will use the application by:
     1. Clicking on the app, which will produce a welcome message "Welcome to Adventure Travel!" and a prompt for the user to start using the app.
     2. Selecting from one of the following main menu options to choose from:
-            - View list of adventure activities (Brisbane and Sydney)
+            - List of adventure activities (Brisbane and Sydney)
             - Book your adventure
             - Cancel your booking
             - Exit the app
     3. Viewing a list of activities available in the cities Brisbane and Sydney.
-    4. Selecting a city and an adventure activity followed by the message prompt "Do you want to book this adventure?"
+    4. Selecting a city and an adventure activity followed by the message prompt "Would you like to book this adventure?"
     5. Selecting from the options "Yes, I want to book this adventure" or "No, take me back to the list of activities".
-        - If the selected option is "Yes", they will be prompted by the message 
-        Registering with the adventure travel company by entering their contact details: first name, last name, home address and email address (input).
-        - The app will check that all user details have been entered.
-        - If any of the fields are missing, the user is prompted to "try again".
-        "When do you want to travel?"The successful entry of a user's details will prompt the message 
-        - If the selected option is "No", they will be taken back to step 4 (Selecting a city and an adventure activity).
-    6. Selecting from a list of available dates for the activity and city followed by the message "You are booked for x activity in x city on the x date. Your booking ID is x".
+        - If the selected option is "Yes", they will be prompted by the message "Please register your details."
+            - Registering with the adventure travel company by entering their contact details: first name, last name, home address and email address (input).
+            - The app will check that all user details have been entered.
+                - If any of the fields are missing, the user is prompted to "try again", otherwise the following message will be displayed "Thank you for your details. You are now registered."
+            - The successful entry of a user's details will prompt the message "When would you like to travel?"
+        - If the selected option is "No", they will be taken back to step 4 (Select a city and an adventure activity).
+    6. Selecting an option from a list of available dates for the activity and city in which it is located, followed by the message "You are booked for x activity in x city on the x date." A booking ID is generated.
     7. Selecting the option "cancel your booking" prompts the message "Are you sure that you want to cancel this activity?"
         - If the selected option is "Yes", they will be prompted by the message "Please enter your booking ID."
             - The user will enter their booking ID. 
@@ -69,7 +73,25 @@ Your outline must include:
 
 A8. 
 
+## <font color="blue">R9. Develop an implementation plan which:
+- outlines how each feature will be implemented and a checklist of tasks for each feature
+- prioritise the implementation of different features, or checklist items within a feature
+- provide a deadline, duration or other time indicator for each feature or checklist/checklist-item
+
+Utilise a suitable project management platform to track this implementation plan
+
+> Your checklists for each feature should have at least 5 items.</font>
+
+A9. 
+
+R10. Design help documentation which includes a set of instructions which accurately describe how to use and install the application.
+
+You must include:
+- steps to install the application
+- any dependencies required by the application to operate
+- any system/hardware requirements
+
+
+
 ## <font color="blue">R3. References</font>
 
-## <font color="blue">R4. Provide a link to your source control repository</font>
-A4. https://github.com/Kfoster14/KelleyFoster_T1A3
