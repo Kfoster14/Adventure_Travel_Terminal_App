@@ -41,8 +41,9 @@ A5.
             - The successful entry of the user's booking ID will prompt the message "We have confirmed your booking cancellation."
             - The user will be taken back to the main menu.
         - If the selected option is "No", the user will be taken back to the main menu.
-    8. Selecting the option "Exit the app"
-        - The user will be given the message "Exiting the Adventure Travel App..." 
+    8. Selecting the option "Exit the App"
+        - The user will be given the message "Exiting the Adventure Travel App..."
+        - The user will be taken out of the app. 
 
 - variables and variable scope
 - loops and conditional control structures
