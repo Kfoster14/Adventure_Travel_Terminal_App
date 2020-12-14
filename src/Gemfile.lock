@@ -29,6 +29,7 @@ PLATFORMS
 
 DEPENDENCIES
   colorize (~> 0.8.1)
+  pastel (~> 0.8.0)
   tty-cursor (~> 0.7.1)
   tty-progressbar (~> 0.17.0)
   tty-prompt (~> 0.22.0)

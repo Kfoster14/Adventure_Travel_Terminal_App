@@ -1,8 +1,8 @@
 class Activities
-    def initialize(city, activity_name, date)
-        @city = city
+    attr_reader :activity_name
+    def initialize(activity_name)
         @activity_name = activity_name
-        @date = date
+        
     end
 
     
