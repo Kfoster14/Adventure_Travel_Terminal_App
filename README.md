@@ -7,6 +7,7 @@ https://github.com/Kfoster14/KelleyFoster_T1A3
 ## <font color="blue">R5. Design a Software Development Plan for a terminal application. The following requirements provide details of what needs to be included in this plan,
 - Develop a statement of purpose and scope for your application. It must include:
     - describe at a high level what the application will do
+    The application I am developing will allow people to view a list of several adventure activities located in the cities of Brisbane and Sydney.
     - identify the problem it will solve and explain why you are developing it
     - identify the target audience
     - explain how a member of the target audience will use it</font>
