@@ -11,39 +11,12 @@ puts "Hi, #{name}"
 
 require_relative("./Customer.rb")
 
-require 'colorize' 
-puts "Welcome to the main menu.".colorize(:color => :blue, :background => :white)
-   
-require "tty-prompt"
+customers = []
 
-prompt = TTY::Prompt.new(symbols: {marker: ">"})
-    
-prompt.select("Please choose from the options below:") do |menu|
-    menu.enum "."
-      
-    menu.choice "Adventure activities", 1
-    menu.choice "Book an adventure", 2
-    menu.choice "Cancel your booking", 3
-    menu.choice "Exit the Travel App", 4
-end 
 
-require 'colorize'  
-case menu_option
-  when "Adventure activities"
-      puts "List of Adventure Activities:".colorize(:color => :blue, :background => :white)
-      create_member     
-  when "2"
-      # Invoke a method called existing_member
-      puts "Option 2 - if you are an existing member"
-  when "3"
-      puts "Option 3 - for cancelling membership"
-  when "4"
-      puts "Exiting from the Library App ..."
-      break
-  else
-      puts "Please choose from the options: 1, 2, 3 OR 4"
-      next
-end # end of case statement
+
+
+
 
 
 
@@ -70,10 +43,10 @@ chosen_activity = []
  
 Brisbane.each do |key, value|
   chosen_activity << value2
-  end
 end
+
  
-puts supplies.flatten.uniq
+
 
 
 
