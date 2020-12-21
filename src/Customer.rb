@@ -3,17 +3,15 @@
 # Customer actions are: view activity list, book an activity, cancel an activity, exit app
 
 #require_relative("./TravelStore.rb")
-
+=begin
 class Customer
-    attr_accessor :first_name, :last_name, :home_address, :email_address
+    attr_accessor :first_name, :last_name, :email_address
     @@booking_number = 0
     
-    def initialize(first_name, last_name, home_address, email_address)
+    def initialize(first_name, last_name, email_address)
         @first_name = first_name
         @last_name = last_name
-        @home_address = home_address
         @email_address = email_address
-        @customer_type = []
         @activities_array = []
         @@booking_number += 1
     end

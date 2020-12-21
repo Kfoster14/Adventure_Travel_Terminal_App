@@ -9,19 +9,25 @@ end
 puts "Hi, #{name}"
 =end
 
-require_relative("./Customer.rb")
+require_relative '../Customer.rb'
+require_relative '../Activities.rb'
+require_relative '../Booking.rb'
+require_relative '../Activityitems.rb'
 
 class Travelstore
-    attr_reader :activity_name
+    attr_reader :activity_list, :travelstore_name
     def initialize(travelstore_name, activity_list)
         @travelstore_name = travelstore_name
-        @activity_list = activity_list
-        @booking = 
+        @activity_list = []
+        @main_menu = main_menu
     end
 
-    
+    def name_of_store
+        return @travelstore_name
+    end
 end
 #Display welcome message
+=begin
 require 'colorize' 
 puts "Welcome to the Main Menu.".colorize(:color => :blue, :background => :white)
    
@@ -37,21 +43,6 @@ prompt.select("Please choose from the options below:") do |menu|
     menu.choice "Cancel your booking", 3
     menu.choice "Exit the Travel App", 4
 end 
-
-
-                
-        when "Book an adventure"
-            puts "Option 2 - if you are an existing member"
-        when "Cancel your booking"
-            puts "Option 3 - for cancelling membership"
-        when "Cancel your booking"
-            puts "Exiting from the Library App ..."
-        
-        else
-            puts "Please choose from the options: 1, 2, 3 OR 4"
-    
-        end   
-    end
 
 
 
