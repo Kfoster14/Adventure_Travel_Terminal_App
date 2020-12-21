@@ -6,7 +6,7 @@ class ActivityItem
     def initialize(activity_name, date)
         @activity_name = activity_name
         @date = date
-        @availability = availability
+        @places_left = places_left
     end
 
 end
