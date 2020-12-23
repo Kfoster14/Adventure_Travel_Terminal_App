@@ -1,3 +1,6 @@
+require_relative './Activities'
+require_relative './Activityitems'
+
 class Booking
     attr_reader :activity_name, :date, :places_left, :places_booked
     @@booking_number = 0
@@ -8,7 +11,7 @@ class Booking
         @places_left = places_left
         @places_booked = places_booked
         @@booking_number += 1
-        @new_booking_list = []
+        @new_booking_list = Hash.new(0)
     end
 
     def add_activity(activity_name, date, places_booked)
@@ -16,7 +19,7 @@ class Booking
         @new_booking_list << new_booking
     end
 
-    def get_booking(activity_name, date, places_booked)
+    def make_booking(activity_name, date, places_booked)
         return @new_booking_list
     end
 
@@ -24,10 +27,13 @@ class Booking
         @@booking_number
     end
 
-    def calc_places
+    def calc_places(places_left, places_booked)
         remaining_places = places_left - places_booked
         return remaining_places
     end
 
+    def cancel_booking(new_booking_list, booking_number)
 
+    end
 end
+
