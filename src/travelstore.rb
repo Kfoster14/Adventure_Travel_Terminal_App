@@ -78,11 +78,12 @@ class Travelstore
 
                 puts "Thank you. The details of your chosen activity are as follows:"
                 puts "Activity: #{act_input}"
-                puts "location: #{locVal}"
-                puts "Date: #{dateVal}."
+                puts "Location: #{locVal}"
+                puts "Date: #{dateVal}"
                 puts "Your booking has been confirmed. Your booking ID number is #{booking_no}"
+                puts "Thank you for your booking. Now exiting the app."
 
-            else puts "exiting app"
+            else puts "Exiting the Travel Store Application... We hope to see you again soon!"
             end
 
 
@@ -110,7 +111,7 @@ class Travelstore
                 puts "Location: #{act_loc}"
                 puts "Date: #{act_date}"
 
-            else puts "exiting app"
+            else puts "Now exiting the Travel Store Application...We hope to see you again soon!"
 
             end
         end
@@ -118,7 +119,7 @@ class Travelstore
 
 end
 
-qld = Travelstore.new( "Queensland Travel Store", [{"activity"=> "Snorkling", "location" => "Cairns", "date" => "30 March"},
+qld = Travelstore.new( "Queensland Adventure Travel Store", [{"activity"=> "Snorkling", "location" => "Cairns", "date" => "30 March"},
                                     {"activity"=> "Sky Diving", "location" => "Sunshine Coast", "date" => "15 May"},
                                     {"activity"=> "Hang Gliding", "location" => "Gold Coast", "date" => "21 July"},
                                     {"activity"=> "Bridge Climb", "location" => "Brisbane","date" => "30 April"},
