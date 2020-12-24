@@ -22,18 +22,16 @@ A5.
 - describe each feature</font>
 
 The 3 features included in the application are:
-1. The ability for a user to view a list of adventure activities located in different locations within Queensland on various upcoming dates.
-    - The user is first directed to the main menu within the app.
+1. The ability to view a list of adventure activities.
+    - A number of "puts" methods direct the user through the main menu options, which include the ability to (a) view the list of adventure activities, (b) to book an adventure activity or (c) to cancel an activity that has been booked by a user. 
+    - A case statement provides conditions following the user's selection of one of the main menu options. The when statements allow the user to view the list of adventure activities using a method that extracts the values from each hash of the activities list array. The first example of error handling ensures that the user only enters the strings "a", "b" or "c". 
 
 2. The ability to book an adventure activity.
+    - The when statements included in the main menu options also allow a user to book an activity. The use of "if" and "else" statements allow a user to either select an activity or exit the application. The user types the name of activity in the terminal that they want to select. The second example of error handling ensures that the user only enters the name of activity that exists in the list of adventure activities. Otherwise, the user will receive a invalid input option and will be prompted to enter their sected activity again. 
 
+3. The ability to cancel an already booked adventure activity.
+    - The when statements included in the main menu options also allow a user to cancel an activity that has already been booked by that user. The use of "if" and "else" statements allow a user to either cancel a booked activity or exit the application. The third case of error handling ensures that the user only enters one of the booking numbers which has been included in the activity list array. Once this has been entered, the user will be informed that their booking has been cancelled.
 
-3. The ability to cancel a booking for an adventure activity.
-
-Note: Ensure that your features above allow you to demonstrate your understanding of the following language elements and concepts:
-- use of variables and the concept of variable scope
-- loops and conditional control structures
-- error handling
 
 ## <font color="blue">R7. Develop an outline of the user interaction and experience for the application.
 Your outline must include:
@@ -43,13 +41,13 @@ Your outline must include:
 
 The user will be able to use and interact with the travel app as described below.
 The user can:
-1. Click on the app, which will produce a welcome message "Welcome to Adventure Travel!" and a prompt for the user to click on the main menu.
+1. Click on the app, which will produce a welcome message "Welcome to Queensland Travel Store!" and a prompt for the user to click on the main menu.
 2. Select from one of the following main menu options:
-    - List of adventure activities in Sydney
+    - View list of adventure activities
     - Book your adventure
     - Cancel your booking
  
-3. View a list of adventure activities available in Sydney.
+3. View a list of adventure activities available in various localities of Queensland.
 4. Select a city, an adventure activity in the selected city and an available date, followed by the message prompt "Would you like to book this adventure?"
 5. Select from the options "Yes, I want to book this adventure" or "No, take me back to the list of activities".
     - If the selected option is "Yes", they will be prompted by the message "Please register your details."
