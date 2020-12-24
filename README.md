@@ -26,7 +26,7 @@ The 3 features included in the application are:
     - The user is directed through the main menu options: (a) view the list of adventure activities, (b) to book an adventure activity or (c) to cancel an activity that has already been booked by a user. 
     - A case statement provides conditions following the user's selection of one of the main menu options. The when statements allow the user to view the list of adventure activities using a method that extracts the values from each hash of the activities list array. 
 
-2. The ability to book an adventure activity.
+2. The ability to book a selected adventure activity.
     - The when statements included in the main menu options also allow a user to book an activity. The use of "if" and "else" statements allow a user to either select an activity or exit the application. The user types the name of activity that they want to select in the terminal. 
 
 3. The ability to cancel an already booked adventure activity.
@@ -39,34 +39,31 @@ Your outline must include:
 - how the user will interact with / use each feature
 - how errors will be handled by the application and displayed to the user</font>
 
-The user will be able to use and interact with the travel app as described below.
+The user will be able to use and interact with the Queensland Travel Store app as described below.
 The user can:
-1. Click on the app, which will produce a welcome message "Welcome to Queensland Adventure Travel Store!" and a Main Menu prompt for the user to select an option on the main menu.
+1. Enter `ruby TravelStore.rb` into their terminal, which will produce a welcome message "Welcome to Queensland Adventure Travel Store!" and a Main Menu prompt for the user to select an option from the main menu.
 2. Select from one of the following main menu options:
-    - (a) View list of adventure activities
+    - (a) View the list of adventure activities
     - (b) Book an adventure
     - (c) Cancel your booking
  
-3. View a list of adventure activities available in various localities of Queensland by selecting option (a).
-4. View a list of available adventure activities, followed by the message prompt "Would you like to book an activity?"
-5. Select from the options "Yes", to book this adventure or "No", to exit the application.
-    - If the selected option is "Yes", the user will be prompted by the message "Choose your activity."
+3. Select option (a) to view a list of adventure activities that are available in various localities within Queensland.
+4. Select option (b) to view a list of available adventure activities, followed by the message prompt "Would you like to book an activity?"
+    - Select from the options "Yes", to book this adventure or "No", to exit the application.
+        - If the selected option is "Yes", the user will be prompted by the message "Please choose your activity."
         - The user will enter their selected activity (input).
-        - The app will check that one of the available activities has been entered.
-        - If anything other than the entry of the available activities, the user is prompted to "try again", otherwise the message ("Thank you for your details. You are now registered. Your booking ID number is x." will be displayed and a booking ID number generated for the chosen activity/location/date.
-    - If the selected option is "No", the user will be shown the message .
-6. Select the option "Cancel your booking", which prompts the message "Are you sure that you want to cancel this activity?"
-        - If the selected option is "Yes", they will be prompted by the message "Please enter your booking ID."
+        - The app will check that one of the available activities has been entered. If anything other than the available activities is entered, the user is prompted to "try again", otherwise the message ("Thank you. The details of your chosen activity are as follows: Activity: , Location: , Date: . Your booking has been confirmed. Your booking ID number is: . Thank you for your booking. Now exiting the app.")
+        - If the selected option is "No", the user will be shown the message "Exiting the Travel Store Application... We hope to see you again soon!".
+5. Select option (c) to "Cancel your booking", which prompts the message "Are you sure that you want to cancel this activity?"
+        - If the selected option is "Yes", the user will be prompted by the message "Please enter your booking ID."
             - The user will enter their booking ID. 
-            - The app will check that the booking ID has been entered.
-            - If the booking ID has not been entered, the user is prompted to "try again".
-            - The successful entry of the user's booking ID will prompt the message "We have confirmed your booking cancellation."
-            - The user will be taken back to the main menu.
-        - If the selected option is "No", the user will be taken back to the main menu.
-7. Select the option "Exit the App"
-        - The user will be given the message "Exiting the Adventure Travel App..."
-        - The user will be taken out of the app. 
-8. Use of error handling:
+            - The app will check that the booking ID has been entered. If the booking ID has not been entered, the user is prompted to "try again".
+            - The successful entry of the user's booking ID will prompt the message "Your booking ID number is x. You have successfully cancelled your booking. Details of your cancelled booking are listed below:
+                Activity: x
+                Location: x
+                Date: x   
+        - If the selected option is "No", the user will receive the message "Now exiting the Travel Store Application...We hope to see you again soon!" 
+6. Use of error handling:
     - The first example of error handling ensures that the user only enters the strings "a", "b" or "c" to select an option from the main menu. Otherwise, the user will receive a invalid input option and will be prompted to enter their selected option again.
     - The second example of error handling ensures that the user only enters the name of the activity that exists in the list of adventure activities. Otherwise, the user will receive a invalid input option and will be prompted to enter their selected activity again.
     - The third case of error handling ensures that when cancelling a booking, the user only enters the booking number that was displayed to the user and is included in the activity list array. Once this has been entered, the user will be informed that their booking has been cancelled. Otherwise, the user will receive a invalid input option and will be prompted to enter their selected activity again.

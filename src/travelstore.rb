@@ -37,6 +37,7 @@ class Travelstore
 
     def main_menu
         require 'colorize'
+        
         puts "Welcome to the Main Menu.".colorize(:color => :blue, :background => :white)
         puts "Please choose from the options below:"
         puts "Select (a) to view adventure activities"
@@ -58,7 +59,7 @@ class Travelstore
             puts "Would you like to book an activity? (yes/no)"
             input = gets.chomp
             if input == "yes"
-                puts "Choose your activity"
+                puts "Please choose your activity"
                 act_input = gets.chomp
                 puts act_input
 
