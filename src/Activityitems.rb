@@ -9,6 +9,8 @@ class ActivityItem
         @places_left = places_left
     end
 
-    
+    def to_s
+        return "#{@activity_name} ... #{@date} ... #{@places_left}"
+    end
 
 end

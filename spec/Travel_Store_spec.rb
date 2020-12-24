@@ -66,14 +66,7 @@ describe Booking do
         display_booking.get_booking(activity_name, date, places_left)
         expect(display_booking.get_booking)
     end
-    it 'should update places left for activity' do
-        activity_name = "Skydiving"
-        date = "21st December 2020"
-        places_booked = 2
-        places_left = 2
-        update_places = Booking.new
-        #finish this
-    end
+    
 end
 
 describe Travelstore do
