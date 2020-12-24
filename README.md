@@ -64,9 +64,11 @@ The user can:
                 Date: x   
         - If the selected option is "No", the user will receive the message "Now exiting the Travel Store Application...We hope to see you again soon!" 
 6. Use of error handling:
-    - The first example of error handling ensures that the user only enters the strings "a", "b" or "c" to select an option from the main menu. Otherwise, the user will receive a invalid input option and will be prompted to enter their selected option again.
-    - The second example of error handling ensures that the user only enters the name of the activity that exists in the list of adventure activities. Otherwise, the user will receive a invalid input option and will be prompted to enter their selected activity again.
-    - The third case of error handling ensures that when cancelling a booking, the user only enters the booking number that was displayed to the user and is included in the activity list array. Once this has been entered, the user will be informed that their booking has been cancelled. Otherwise, the user will receive a invalid input option and will be prompted to enter their selected activity again.
+    - The first example of error handling ensures that the user only enters the strings "a", "b", "c" or "d" to select an option from the main menu. Otherwise, the user will receive the message "Please enter the options a, b, c or d" and will be prompted to enter their selected option again.
+    - The second example ensures that the user only enters "yes" or "no" after being asked "Would you like to book an activity? (yes/no)". Otherwise the user will receive the message "Please enter either yes or no".
+    - The third example of error handling ensures that the user only enters the name of the activity that exists in the list of adventure activities. Otherwise, the user will receive the message "Please enter one of the listed activities" and will be prompted to enter their selected activity again.
+    - The fourth case of error handling ensures that when being asked "Are you sure you want to cancel your booking? (yes/no)", the user only enters "yes" or "no". Otherwise the message "Please enter yes or no" is displayed to the user. 
+    - The fifth case of error handling ensures that the user enters the booking number that was displayed during the booking, i.e.  "QLD123","QLD124","QLD125","QLD126","QLD127", or "QLD128". Once this has been entered, the user will be informed that their booking has been cancelled. Otherwise, the user will receive the message "Please enter the booking ID number that was generated with your booking." and will be prompted to enter their booking number again.
 
 ## <font color="blue">R8. Develop a diagram which describes the control flow of your application. Your diagram must:
 - show the workflow/logic and/or integration of the features in your application for each feature.

@@ -1,5 +1,4 @@
-#running a script makes it easier for someone else to use the app 
-=begin
+
 if ARGV.length > 0
     name = ARGV[0]
 else    
@@ -7,7 +6,7 @@ else
     name = gets.chomp
 end
 puts "Hi, #{name}"
-=end
+
 require 'yaml'
 class Travelstore
     attr_reader :travelstore_name
@@ -34,6 +33,10 @@ class Travelstore
     
     def main_menu
         while true
+        require('artii')
+        a = Artii::Base.new
+        puts a.asciify('Hello Fellow Adventure Enthusiasts!!')
+
             customer_message = "Welcome to the #{travelstore_name}!"
             latest_activity = " The latest addition to our activities is skydiving!"
             puts customer_message + latest_activity
@@ -57,9 +60,7 @@ class Travelstore
 
                 list = activity_list.map {|x| x.values[0]}
                 puts list
-                # if select_option == "a"
-                #     break
-                # end
+                
             when "b"
                 input_arr = ["yes", "no"]
                 puts "Available activities:"
@@ -96,6 +97,7 @@ class Travelstore
                     booking_no = new_booking.fetch(indVal1)
 
                     puts "Thank you. The details of your chosen activity are as follows:"
+                    sleep(3)
                     puts "Activity: #{act_input}"
                     puts "Location: #{locVal}"
                     puts "Date: #{dateVal}"
@@ -143,7 +145,7 @@ class Travelstore
                 puts "Now exiting the Travel Store Application...We hope to see you again soon!"
                 break
             else 
-                puts "Please select one of the option a, b, c or d"
+                puts "Please select one of the options a, b, c or d"
                     next
             end
         end
