@@ -1,4 +1,4 @@
-# <font color="magenta">T1A3 - Terminal Application</font>
+# <font color="magenta">Terminal Application</font>
 
 ## <font color="blue">R4. Provide a link to your source control repository</font>
 A4. The link to my repository is:
